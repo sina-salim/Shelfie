@@ -26,7 +26,7 @@
 ## 🖥️ Screenshots
 
 <div align="center">
-  <img src="ScreenShotl/Shelfie.GIF" alt="Shelfie Screenshot" width="700">
+  <img src="ScreenShot/Shelfie.GIF" alt="Shelfie Screenshot" width="700">
 </div>
 
 ## 🚀 Installation
