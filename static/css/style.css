@@ -1,0 +1,261 @@
+/* استایل‌های اصلی */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+
+body {
+    background: linear-gradient(180deg, #000000 60%, #e82227 140%); 
+    color: #333;
+    font-family: 'Vazirmatn', 'Poppins', Tahoma, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Vazirmatn', 'Poppins', Tahoma, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn, .form-control, .form-select {
+    font-family: 'Vazirmatn', 'Poppins', Tahoma, Arial, sans-serif;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo-image {
+    max-width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+}
+
+.card-header {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-header.bg-primary {
+    background: linear-gradient(45deg, #1a1a1a, #e82227) !important;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+    background-color: transparent;
+}
+
+/* استایل برای لاگ‌ها */
+.live-log-box {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    height: 330px;
+    overflow-y: auto;
+    margin-top: 0;
+    display: block;
+    width: 100%;
+}
+
+.log-entry {
+    margin: 0;
+    padding: 2px 0;
+    border-bottom: 1px dashed #333;
+}
+
+.log-time {
+    color: #ffc107;
+    margin-right: 5px;
+}
+
+/* استایل نشانگر فعالیت چشمک‌زن */
+.activity-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF5757;
+    margin-right: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* استایل دکمه استخراج */
+#extract-btn {
+    background-color: #FF3D00;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+#extract-btn:hover {
+    background-color: #DD2C00;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+/* استایل برای نوار پیشرفت */
+.progress-bar {
+    transition: width 0.5s ease;
+}
+
+#progress-status {
+    transition: background-color 0.3s ease;
+}
+
+/* استایل برای جدول محصولات */
+#products-table {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: transparent;
+    font-weight: 300;
+}
+
+#products-table th {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 10;
+}
+
+#products-table td {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) > * {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.alert {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.alert-info {
+    background-color: rgba(13, 202, 240, 0.2);
+    border-color: rgba(13, 202, 240, 0.5);
+}
+
+.alert-success {
+    background-color: rgba(25, 135, 84, 0.2);
+    border-color: rgba(25, 135, 84, 0.5);
+}
+
+.form-control, .form-select {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.form-check-input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* استایل برای اعلان‌ها */
+.toast {
+    opacity: 1 !important;
+}
+
+.toast-header {
+    color: white;
+}
+
+/* انیمیشن برای اعلان‌ها */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.toast {
+    animation: slideIn 0.3s forwards;
+}
+
+/* استایل‌های واکنشگرا */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .logo-image {
+        max-width: 150px;
+        height: 100px;
+    }
+    
+    .live-log-box {
+        height: 200px;
+    }
+}
+
+/* تنظیمات اضافی فونت */
+.card-title {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+/* انیمیشن برای عناوین */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3, .card-title {
+    animation: fadeIn 0.8s ease-out forwards;
+} 
